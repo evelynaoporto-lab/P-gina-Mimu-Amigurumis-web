@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Amigurumis Mimu | Creaciones tejidas a mano con dedicación y cariño.">
+
+    <title>Amigurumis Mimu | Hecho a mano</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->    
+</body>
+
+    <header class="header">
+
+        <a href="#inicio" class="logo-link">
+            <img src="img/logo.png" alt="Mimu Amigurumis" class="logo">
+        </a>
+
+        <nav class="nav" id="nav">
+
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#mimu">Sobre Mimu</a>
+            <a href="#proceso">Nuestro proceso</a>
+            <a href="#contacto">Contacto</a>
+
+        </nav>
+
+        <div class="header-actions">
+
+            <!-- Carrito -->
+
+            <button class="cart-button" id="cartButton" aria-label="Abrir carrito">
+
+                <span class="cart-icon">🛒</span>
+
+                <span class="cart-count" id="cartCount">
+                    0
+                </span>
+
+            </button>
+            
+            <!-- Menú -->
+
+            <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= CARRITO ================= -->
+
+    <aside class="cart-panel" id="cartPanel">
+
+        <div class="cart-header">
+
+            <div>
+                <p class="section-label">MIMU</p>
+                <h2>Tu carrito</h2>
+            </div>
+
+            <button class="close-cart" id="closeCart">
+                ×
+            </button>
+
+        </div>
+
+        <div class="cart-items" id="cartItems">
+
+            <div class="empty-cart">
+
+                <span>🧶</span>
+
+                <p>
+                    Todavía no agregaste productos.
+                </p>
+
+                <a href="#productos" id="goProducts">
+                    Ver productos
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+
+                <span>Total</span>
+
+                <strong id="cartTotal">
+                    $0
+                </strong>
+
+            </div>
+
+            <button class="checkout-button" id="checkoutButton">
+                Realizar pedido por WhatsApp
+            </button>
+
+        </div>
+
+    </aside>
+
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-content">
+
+                <p class="mini-title">
+                    ✦ AMIGURUMIS HECHOS A MANO ✦
+                </p>
+
+                <h1>
+                    Pequeños detalles,
+                    <span>grandes sonrisas.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Creaciones tejidas a mano, realizadas con
+                    paciencia, dedicación y mucho cariño.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#productos" class="btn primary">
+                        Ver productos
+                    </a>
+
+                    <a href="#mimu" class="btn secondary">
+                        Conocer Mimu
+                    </a>
+
+                </div>
+
+                <p class="hero-note">
+                    ✦ Hecho a mano desde 2024
+                </p>
+
+            </div>
+
+
+            <div class="hero-decoration">
+
+                <div class="circle">
+
+                    <img src="img/logo.png"
+                        alt="Mimu Amigurumis">
+
+                    <span class="sparkle sparkle-one">✦</span>
+                    <span class="sparkle sparkle-two">✧</span>
+                    <span class="sparkle sparkle-three">✦</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= INTRO ================= -->
+
+        <section class="intro">
+
+            <p class="section-label">
+                BIENVENIDOS A MIMU
+            </p>
+
+            <h2>
+                Creaciones únicas,
+                <em>hechas a mano.</em>
+            </h2>
+
+            <p>
+                Cada Amigurumi Mimu es realizado artesanalmente,
+                cuidando cada detalle para crear pequeños personajes
+                que puedan acompañarte, regalarse o simplemente
+                sacarte una sonrisa.
+            </p>
+
+        </section>
+
+
+        <!-- ================= PRODUCTOS ================= -->
+
+        <section class="products-section" id="productos">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        NUESTRA COLECCIÓN
+                    </p>
+
+                    <h2>
+                        Productos
+                    </h2>
+
+                </div>
+
+                <p class="heading-description">
+                    Descubrí nuestras creaciones hechas a mano.
+                </p>
+
+            </div>
+
+
+            <!-- FILTROS -->
+
+            <div class="filters">
+
+                <button class="filter active" data-category="todos">
+                    Todos
+                </button>
+
+                <button class="filter" data-category="amigurumis">
+                    Amigurumis
+                </button>
+
+                <button class="filter" data-category="llaveros">
+                    Llaveros
+                </button>
+
+                <button class="filter" data-category="accesorios">
+                    Accesorios
+                </button>
+
+            </div>
+
+
+            <!-- PRODUCTOS -->
+
+            <div class="products-grid" id="productsGrid">
+
+
+                <!-- PRODUCTO 1 -->
+
+                <article class="product-card"
+                    data-category="amigurumis"
+                    data-name="Osito Mimu"
+                    data-price="15000">
+
+                    <div class="product-image">
+
+                        <img src="img/producto1.jpg"
+                            alt="Osito Mimu">
+
+                        <span class="product-tag">
+                            Hecho a mano
+                        </span>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            AMIGURUMI
+                        </p>
+
+                        <h3>
+                            Osito Mimu
+                        </h3>
+
+                        <p class="product-description">
+                            Pequeño personaje tejido artesanalmente.
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="price">
+                                $15.000
+                            </span>
+
+                            <button class="add-button">
+                                Agregar +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCTO 2 -->
+
+                <article class="product-card"
+                    data-category="amigurumis"
+                    data-name="Personaje Mimu"
+                    data-price="18000">
+
+                    <div class="product-image">
+
+                        <img src="img/producto2.jpg"
+                            alt="Personaje Mimu">
+
+                        <span class="product-tag">
+                            Favorito
+                        </span>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            AMIGURUMI
+                        </p>
+
+                        <h3>
+                            Personaje Mimu
+                        </h3>
+
+                        <p class="product-description">
+                            Una creación única para regalar.
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="price">
+                                $18.000
+                            </span>
+
+                            <button class="add-button">
+                                Agregar +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCTO 3 -->
+
+                <article class="product-card"
+                    data-category="llaveros"
+                    data-name="Llavero Mimu"
+                    data-price="7000">
+
+                    <div class="product-image">
+
+                        <img src="img/producto3.jpg"
+                            alt="Llavero Mimu">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            LLAVERO
+                        </p>
+
+                        <h3>
+                            Llavero Mimu
+                        </h3>
+
+                        <p class="product-description">
+                            Un pequeño compañero para llevar a todos lados.
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="price">
+                                $7.000
+                            </span>
+
+                            <button class="add-button">
+                                Agregar +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCTO 4 -->
+
+                <article class="product-card"
+                    data-category="accesorios"
+                    data-name="Accesorio Mimu"
+                    data-price="9000">
+
+                    <div class="product-image">
+
+                        <img src="img/producto4.jpg"
+                            alt="Accesorio Mimu">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            ACCESORIO
+                        </p>
+
+                        <h3>
+                            Accesorio Mimu
+                        </h3>
+
+                        <p class="product-description">
+                            Detalles artesanales para complementar tu estilo.
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="price">
+                                $9.000
+                            </span>
+
+                            <button class="add-button">
+                                Agregar +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SOBRE MIMU ================= -->
+
+        <section class="about" id="mimu">
+
+            <div class="about-image">
+
+                <div class="about-circle">
+
+                    <img src="img/logo.png"
+                        alt="Mimu Amigurumis">
+
+                </div>
+
+            </div>
+
+
+            <div class="about-content">
+
+                <p class="section-label">
+                    NUESTRA HISTORIA
+                </p>
+
+                <h2>
+                    Más que un emprendimiento,
+                    <em>una pequeña historia.</em>
+                </h2>
+
+                <p>
+                    Amigurumis Mimu nació como un emprendimiento
+                    artesanal dedicado a crear pequeños personajes
+                    tejidos a mano.
+                </p>
+
+                <p>
+                    Cada creación se realiza con paciencia,
+                    creatividad y dedicación, buscando que cada
+                    producto tenga su propia personalidad.
+                </p>
+
+                <div class="year">
+
+                    <strong>2024</strong>
+
+                    <span>
+                        Año de creación de Mimu
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROCESO ================= -->
+
+        <section class="process" id="proceso">
+
+            <div class="section-heading centered">
+
+                <p class="section-label">
+                    DETRÁS DE CADA PRODUCTO
+                </p>
+
+                <h2>
+                    ¿Cómo funciona Mimu?
+                </h2>
+
+                <p>
+                    Cada producto atraviesa diferentes etapas
+                    antes de llegar a su nuevo dueño.
+                </p>
+
+            </div>
+
+
+            <div class="process-grid">
+
+                <div class="process-card">
+
+                    <span>01</span>
+
+                    <div class="process-icon">
+                        🧶
+                    </div>
+
+                    <h3>
+                        Materiales
+                    </h3>
+
+                    <p>
+                        Selección de hilos, relleno,
+                        accesorios y materiales necesarios.
+                    </p>
+
+                </div>
+
+
+                <div class="process-card">
+
+                    <span>02</span>
+
+                    <div class="process-icon">
+                        🪡
+                    </div>
+
+                    <h3>
+                        Producción
+                    </h3>
+
+                    <p>
+                        Cada pieza se realiza artesanalmente
+                        y requiere tiempo y dedicación.
+                    </p>
+
+                </div>
+
+
+                <div class="process-card">
+
+                    <span>03</span>
+
+                    <div class="process-icon">
+                        🧸
+                    </div>
+
+                    <h3>
+                        Producto
+                    </h3>
+
+                    <p>
+                        El resultado es una pieza única
+                        y lista para entregar.
+                    </p>
+
+                </div>
+
+
+                <div class="process-card">
+
+                    <span>04</span>
+
+                    <div class="process-icon">
+                        📦
+                    </div>
+
+                    <h3>
+                        Preparación
+                    </h3>
+
+                    <p>
+                        Cada pedido se prepara cuidadosamente
+                        antes de su entrega.
+                    </p>
+
+                </div>
+
+
+                <div class="process-card">
+
+                    <span>05</span>
+
+                    <div class="process-icon">
+                        💌
+                    </div>
+
+                    <h3>
+                        Entrega
+                    </h3>
+
+                    <p>
+                        El producto llega a su nuevo dueño
+                        listo para disfrutar.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FRASE ================= -->
+
+        <section class="quote">
+
+            <div>
+
+                <span>“</span>
+
+                <p>
+                    Cada puntada cuenta una pequeña historia.
+                </p>
+
+                <small>
+                    — Amigurumis Mimu
+                </small>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= INSTAGRAM ================= -->
+
+        <section class="instagram">
+
+            <p class="section-label">
+                SEGUINOS
+            </p>
+
+            <h2>
+                Mimu también está en
+                <em>Instagram.</em>
+            </h2>
+
+            <p>
+                Conocé nuestros nuevos productos,
+                trabajos y novedades.
+            </p>
+
+            <a href="https://www.instagram.com/amigurumis_mimu/"
+                target="_blank"
+                class="instagram-btn">
+
+                @amigurumis_mimu ↗
+
+            </a>
+
+        </section>
+
+
+        <!-- ================= COMPARTIR ================= -->
+
+        <section class="share-section">
+
+            <div class="share-box">
+
+                <div>
+
+                    <p class="section-label">
+                        COMPARTÍ MIMU
+                    </p>
+
+                    <h2>
+                        Llevá Mimu
+                        <em>con vos.</em>
+                    </h2>
+
+                    <p>
+                        Compartí nuestro catálogo con quien quieras.
+                    </p>
+
+                </div>
+
+                <button class="share-button" id="shareButton">
+                    Compartir página ↗
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACTO ================= -->
+
+        <section class="contact" id="contacto">
+
+            <div class="contact-box">
+
+                <div>
+
+                    <p class="section-label">
+                        CONTACTO
+                    </p>
+
+                    <h2>
+                        ¿Querés conocer
+                        <em>Mimu?</em>
+                    </h2>
+
+                    <p>
+                        Encontranos en nuestras redes sociales
+                        y descubrí todas nuestras creaciones.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-links">
+
+                    <a href="https://www.instagram.com/amigurumis_mimu/"
+                        target="_blank">
+
+                        <span>Instagram</span>
+                        <strong>@amigurumis_mimu</strong>
+
+                    </a>
+
+                    <a href="#productos">
+
+                        <span>Catálogo</span>
+                        <strong>Ver productos →</strong>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <img src="img/logo.png"
+            alt="Mimu Amigurumis"
+            class="footer-logo">
+
+        <p>
+            Hecho a mano, hecho con amor ♡
+        </p>
+
+        <div class="footer-line"></div>
+
+        <small>
+            © 2026 Amigurumis Mimu · Todos los derechos reservados
+        </small>
+
+    </footer>
+
+
+    <!-- ================= TOAST ================= -->
+
+    <div class="toast" id="toast">
+        Producto agregado al carrito ✓
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
